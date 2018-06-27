@@ -54,5 +54,6 @@ class Song
     song = self.new
     self.name = file[1]
     self.artist_name = file[0]
+    song
   end
 end
