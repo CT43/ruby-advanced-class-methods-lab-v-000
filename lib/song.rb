@@ -40,6 +40,7 @@ class Song
     if self.all.include?(name)
       self.find_by_name(name)
     else
-      self.create_by_name(name_) 
+      self.create_by_name(name)
+    end
   end
 end
