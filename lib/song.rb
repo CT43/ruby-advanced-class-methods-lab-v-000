@@ -52,7 +52,7 @@ class Song
     binding.pry
     file = filename.chomp(".mp3").split(' - ')
     song = self.new
-    @name = file[1]
-    @artist_name = file[0]
+    self.name = file[1]
+    self.artist_name = file[0]
   end
 end
