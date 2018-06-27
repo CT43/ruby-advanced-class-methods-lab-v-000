@@ -34,11 +34,10 @@ class Song
     self.all.find{|song| song.name == name}
   end
 
-  binding.pry
+
 
   def self.find_or_create_by_name(name)
-    if self.all.include?(name)
-      self.find_by_name(name)
+    if self.find_by_name(name) == self.all.include?(name)
     else
       self.create_by_name(name)
     end
