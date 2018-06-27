@@ -38,7 +38,7 @@ class Song
 
   def self.find_or_create_by_name(name)
     existing = self.find_by_name(name)
-    if self.all.include?(name)
+    if self.all.name.include?(name)
       existing
     else
       self.create_by_name(name)
@@ -46,6 +46,6 @@ class Song
   end
 
   def self.alphabetical
-    self.all.sort_by {|a, b| a <=> b} 
+    self.all.sort_by {|a, b| a <=> b}
   end
 end
