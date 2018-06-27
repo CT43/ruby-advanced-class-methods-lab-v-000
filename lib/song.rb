@@ -46,7 +46,7 @@ class Song
 
   def self.alphabetical
     self.all.collect do |instance, song_name|
-      song_name.sort
+      song_name.sort_by{|a,b| a<=> b}
     end
   end
 end
