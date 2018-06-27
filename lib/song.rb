@@ -46,7 +46,7 @@ class Song
 
   def self.alphabetical
     self.all.collect do |a|
-      a.name.sort
+      a.sort
 
     end
   end
